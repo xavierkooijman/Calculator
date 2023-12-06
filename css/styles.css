@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calcButtons{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(5,1fr);
+  height: 100%;
+  background-color: #1f3347;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.mainNumbers{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+  grid-column: 1 / span 3;
+  grid-row: 2 / span 3;
+}
+
+.calcContainer{
+  width: 500px;
+  height: 600px;
+  background-color: #1f3347;
+  box-shadow: #1f3347 0px 5px 15px;
+  border-radius: 15px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 3rem;
+  color: white;
+  background-color: #f5ca5479;
+}
+
+.operationButtons{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,1fr);
+  grid-row: 1 / span 5;
+}
+
+#dotButton{
+  grid-row: 5;
+  grid-column: 3;
+}
+
+button[value="0"]{
+  grid-row: 5;
+  grid-column: 1 / span 2;
+  border-radius: 30px;
+}
+
+#clearButton{
+  grid-column: 1 / span 2;
+  border-radius: 30px;
+}
+
+button{
+  background-color: #44566b;
+  border: none;
+  margin: 5px;
+  font: inherit;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+p{
+  text-align: end;
+  height: 10%;
+  color: #1f3347;
+  padding: 0.2em;
+}
+
+.calcScreenContainer{
+  background-color: #f5c954;
+  margin: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+}
