@@ -9,32 +9,33 @@
 <body>
   <div class="calcContainer">
     <div class="calcScreenContainer">
-      <p id="calcScreen">0</p>
+      <p id="calcScreen"></p>
     </div>
     <div class="calcButtons">
       <button id="clearButton">C</button>
       <button id="deleteButton">Del</button>
-      <button value="0">0</button>
+      <button class="buttonNumbers" value="0">0</button>
       <div class="mainNumbers">
-        <button value="1">1</button>
-        <button value="2">2</button>
-        <button value="3">3</button>
-        <button value="4">4</button>
-        <button value="5">5</button>
-        <button value="6">6</button>
-        <button value="7">7</button>
-        <button value="8">8</button>
-        <button value="9">9</button>
+        <button class="buttonNumbers" value="1">1</button>
+        <button class="buttonNumbers" value="2">2</button>
+        <button class="buttonNumbers" value="3">3</button>
+        <button class="buttonNumbers" value="4">4</button>
+        <button class="buttonNumbers" value="5">5</button>
+        <button class="buttonNumbers" value="6">6</button>
+        <button class="buttonNumbers" value="7">7</button>
+        <button class="buttonNumbers" value="8">8</button>
+        <button class="buttonNumbers" value="9">9</button>
       </div>
-      <div class="operationButtons">
-        <button id="addButton">+</button>
-        <button id="subButton">-</button>
-        <button id="multButton">x</button>
-        <button id="divideButton">/</button>
+      <div class="operationButtonsContainer">
+        <button id="addButton" class="operationButtons" value="+">+</button>
+        <button id="subButton" class="operationButtons" value="-">-</button>
+        <button id="multButton" class="operationButtons" value="x" >x</button>
+        <button id="divideButton" class="operationButtons" value="/">/</button>
         <button id="equalButton">=</button>
       </div>
-      <button id="dotButton">.</button>
+      <button id="dotButton" value=".">.</button>
     </div>
   </div>
+  <script src="js/app.js"></script>
 </body>
 </html>
