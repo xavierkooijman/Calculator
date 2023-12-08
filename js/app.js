@@ -36,8 +36,8 @@ function splitScreenValue(screenValue){
     if(screenValue.includes(op)){
       operation = op
       opIndex = screenValue.indexOf(op)
-      number1 = parseInt(screenValue.slice(0,opIndex))
-      number2 = parseInt(screenValue.slice(opIndex+1))
+      number1 = parseFloat(screenValue.slice(0,opIndex))
+      number2 = parseFloat(screenValue.slice(opIndex+1))
     }
   })
   return {
@@ -106,8 +106,10 @@ deleteButton.addEventListener('click', () => {
 
 dotButton.addEventListener('click', () => {
   let screenValue = getScreenValue()
-  screenValue = setScreenValue(screenValue,dotButton)
-  updateScreen(screenValue)
+  if(screenValue.includes(".") != true){
+    screenValue = setScreenValue(screenValue,dotButton)
+    updateScreen(screenValue)
+  }
 })
 
 equalButton.addEventListener('click', () => {
